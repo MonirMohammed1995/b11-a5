@@ -7,7 +7,7 @@ function addMsg() {
   let container = document.getElementById("msgBox");
   let currentTime = new Date().toLocaleTimeString();
   const p = document.createElement("p");
-  p.innerText = `You have Complete The Task ${title} at ${currentTime}`;
+  p.innerText = `You have Complete The Task ${'Add Dark Mode'} at ${currentTime}`;
   container.appendChild(p);
 }
 
