@@ -1,6 +1,6 @@
 let increaseText = document.getElementById("increaseText");
 let decreaseText = document.getElementById("decreaseText");
-let title = document.querySelectorAll(".title");
+const title = document.querySelectorAll(".title");
 let buttons = document.querySelectorAll(".actionBtn");
 
 function addMsg() {
