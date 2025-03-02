@@ -11,10 +11,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header class="max-w-[1366px] mx-auto">
+  <body class="bg-slate-200">
+    <header class="max-w-[1366px] mx-auto pt-6">
       <nav>
-        <div class="navbar bg-base-100 rounded-lg">
+        <div class="navbar bg-base-100 rounded-xl pt-7 pb-7">
           <div class="flex-1 items-center">
             <a class="btn btn-ghost text-3xl"
               ><img class="w-9" src="./assets/logo.png" alt="" />Dev<span
@@ -29,6 +29,34 @@
         </div>
       </nav>
     </header>
+    <!-- Main Content -->
+     <section class="max-w-[1366px] mx-auto pt-6 space-y-4">
+        <!-- Q1 -->
+        <div class="bg-white rounded-xl flex flex-col gap-5 p-4">
+            <h2 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="text-xl text-gray-500"><span class="font-bold">Ans. </span>There are 5 ways in which you can select elements in a DOM using selectors for example 1. getElementsByTagName(), 2. getElementsByClassName(), 3. getElementById(), 4. querySelector(), 5. querySelectorAll()</p>
+        </div>
+        <!-- Q2 -->
+        <div class="bg-white rounded-xl flex flex-col gap-5 p-4">
+            <h2 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            <p class="text-xl text-gray-500"><span class="font-bold">Ans. </span>This property focuses on the rendered text content. When you use innerText to read the content of an element, it returns the text as it appears on screen. It ignores HTML tags. And it also does not include text that is hidden with CSS styles. innerHTML property, it reads both the HTML markup and the text content of the element. This means when you use it to set the content of elements, you can include HTML tags, and the browser will render them correctly. The textContent property also ignores all HTML tags and returns only the text. Whiles innerText reads text as it is rendered on screen, textContent reads text as it is in the markup. It also returns all text, whether it's rendered on screen or not.</p>
+        </div>
+        <!-- Q3 -->
+        <div class="bg-white rounded-xl flex flex-col gap-5 p-4">
+            <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-xl text-gray-500"><span class="font-bold">Ans. </span>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future. Inside the Event Handling Function.</p>
+        </div>
+        <!-- Q4 -->
+        <div class="bg-white rounded-xl flex flex-col gap-5 p-4">
+            <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-xl text-gray-500"><span class="font-bold">Ans. </span>Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object</p>
+        </div>
+        <!-- Q5 -->
+        <div class="bg-white rounded-xl flex flex-col gap-5 p-4">
+            <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-xl text-gray-500"><span class="font-bold">Ans. </span>To add, remove, and modify HTML elements using JavaScript, you can use methods like createElement, appendChild, removeChild, and properties like innerHTML and textContent. For example, to add an element, you can create it using document. createElement and then append it to a parent element using appendChild.</p>
+        </div>
+     </section>
     <script src="./js/pageMove.js"></script>
   </body>
 </html>
