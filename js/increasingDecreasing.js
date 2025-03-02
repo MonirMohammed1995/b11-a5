@@ -1,6 +1,27 @@
 let increaseText = document.getElementById("increaseText");
 let decreaseText = document.getElementById("decreaseText");
+let title = document.querySelectorAll(".title");
 let buttons = document.querySelectorAll(".actionBtn");
+
+function myFunction() {
+    const p = document.getElementById("msgBox");
+    p.remove();
+}
+
+function addMsg(){
+let container = document.getElementById("msgBox");
+let currentTime = new Date().toLocaleTimeString();
+const p = document.createElement("p");
+p.innerText = `You have Complete The Task ${title} at ${currentTime}`;
+container.appendChild(p);
+}
+
+function checkAllDisabled() {
+    let allDisabled = Array.from(buttons).every(button => button.disabled);
+    if (allDisabled) {
+        alert("All Task are done successfully");
+    }
+}
 
 buttons.forEach(button => {
     button.addEventListener("click", function() {
@@ -8,5 +29,7 @@ buttons.forEach(button => {
         decreaseText.innerText = parseInt(decreaseText.innerText) - 1;
         button.disabled = true;
         alert("Updated Successfully");
+        checkAllDisabled();
+        addMsg();
     });
 })
